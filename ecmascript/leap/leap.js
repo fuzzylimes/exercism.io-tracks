@@ -3,15 +3,7 @@ class Leap {
         this.year = year;
     }
     isLeap() {
-        if(!(this.year % 400)) {
-            return true;
-        } else if(!(this.year % 100)) {
-            return false;
-        } else if(!(this.year % 4)) {
-            return true;
-        } else {
-            return false;
-        }
+        return !(this.year % 400) || ((this.year % 100) && !(this.year % 4));
     }
 }
 
