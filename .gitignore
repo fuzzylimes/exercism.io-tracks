@@ -2,3 +2,9 @@ package-lock.json
 .solution.json
 node_modules
 .DS_store
+.gradle
+build
+.settings
+bin
+.classpath
+.project
