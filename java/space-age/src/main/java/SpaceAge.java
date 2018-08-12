@@ -1,11 +1,12 @@
 class SpaceAge {
 
-    private static double seconds, mercury, venus, mars, jupiter, saturn, uranus, neptune;
+    private final double seconds, mercury, venus, earth, mars, jupiter, saturn, uranus, neptune;
 
     SpaceAge(double seconds) {
         this.seconds = seconds;
         this.mercury = 0.2408467;
         this.venus = 0.61519726;
+        this.earth = 31557600;
         this.mars = 1.8808158;
         this.jupiter = 11.862615;
         this.saturn = 29.447498;
@@ -14,7 +15,6 @@ class SpaceAge {
     }
 
     double getSeconds() {
-        double earth = 31557600;
         return seconds/earth;
     }
 
