@@ -30,7 +30,7 @@ public class LuhnValidatorTest {
 
     @Test
     public void testSimpleValidSINReversedBecomesInvalid() {
-        assertTrue(luhnValidator.isValid("59"));
+        assertFalse(luhnValidator.isValid("59"));
     }
 
     @Test
