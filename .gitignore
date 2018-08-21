@@ -10,3 +10,4 @@ bin
 .project
 .idea
 .vscode
+debug_log
